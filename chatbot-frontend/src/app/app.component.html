@@ -1,0 +1,11 @@
+<mat-sidenav-container class="app-container" style="background-color: #ffffff!important;">>
+  <mat-sidenav #sidenav mode="side" class="sidenav" opened>
+    <app-sidebar (conversationSelected)="onConversationSelected($event)" (toggleSidenav)="sidenav.toggle()"></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-top-nav (toggleSidenav)="sidenav.toggle()"></app-top-nav>
+    <div class="main-layout">
+      <app-chat-window [conversationId]="selectedConversationId"></app-chat-window>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

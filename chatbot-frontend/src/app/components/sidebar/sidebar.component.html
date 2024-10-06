@@ -1,0 +1,11 @@
+<div class="sidebar" style="background-color: #ffffff!important;">
+  <button mat-raised-button class="new-chat" (click)="createConversation()">New Chat</button>
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let conversation of conversations" (click)="selectConversation(conversation.id)">
+      <span class="conversation-name">{{ conversation.name }}</span>
+      <button mat-icon-button class="delete-button" (click)="deleteConversation($event, conversation.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-list-item>
+  </mat-list>
+</div>

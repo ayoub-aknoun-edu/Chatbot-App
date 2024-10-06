@@ -1,0 +1,20 @@
+.app-container {
+  height: 100svh;
+}
+
+.main-layout {
+  display: grid;
+  overflow: hidden;
+  height: calc(100vh - 64px); /* Subtract the height of the toolbar */
+}
+
+.sidenav {
+  border-bottom: 2px solid #444444;
+  border-image: radial-gradient(circle, #09efef, #ffffff) 1;
+  background-color: black!important;
+
+}
+
+:host ::ng-deep mat-sidenav * {
+  overflow: hidden !important;
+}

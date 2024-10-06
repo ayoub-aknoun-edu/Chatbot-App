@@ -1,0 +1,15 @@
+<div class="chat-window">
+  <div #messageContainer class="messages">
+    <div *ngFor="let msg of messages" [class.user]="msg.sender === 'User'" [class.ai]="msg.sender === 'AI'">
+      <div class="messages-{{ msg.sender }}">
+        {{ msg.message }}
+      </div>
+    </div>
+  </div>
+  <div class="input-area">
+    <mat-form-field class="full-width" appearance="outline">
+      <input matInput [(ngModel)]="userInput" (keydown.enter)="sendMessage()" placeholder="Type a message..." />
+      <mat-icon matSuffix>arrow_upward</mat-icon>
+    </mat-form-field>
+  </div>
+</div>

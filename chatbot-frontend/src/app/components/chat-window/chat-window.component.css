@@ -1,0 +1,150 @@
+/* src/app/components/chat-window/chat-window.component.css */
+
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 100%;
+  color: white;
+  align-items: center;
+
+
+}
+
+.messages-User {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: auto;
+  width: fit-content;
+  max-width: 65%;
+  background-color: #d0f0f8; /* Light blue for user */
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.messages-AI {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: auto;
+  max-width: 65%;
+  background-color: #0174bd; /* Light pink for AI */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  margin: 0 10%;
+  flex: 1;
+  overflow-y: auto;
+  width: 80%;
+  padding: 10px;
+  color: black;
+  border-radius: 0.4em;
+  max-height: 74svh;
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 70%;
+  background-color: #ffffff;
+  position: sticky;
+}
+
+
+button {
+  height: 56px; /* Matches the input field height for better alignment */
+}
+
+
+/* the input message  */
+
+.full-width {
+  flex: 1;
+  margin-right: 10px;
+  border-radius: 50px !important;
+}
+.full-width input{
+  padding-left: 20px;
+  color: black;
+}
+
+
+  :host ::ng-deep .mat-mdc-form-field {
+    padding: 0px !important;
+  }
+
+  :host ::ng-deep .mat-mdc-form-field .mdc-text-field{
+    border: 2px solid #09efef!important;
+    border-radius: 0.7em!important;
+  }
+
+  :host ::ng-deep .mat-mdc-form-field .mat-mdc-form-field-flex{
+    border-radius: .7em !important;
+  }
+
+  :host ::ng-deep .mat-mdc-form-field .mdc-notched-outline{
+    border-radius: .7em !important;
+  }
+
+  :host ::ng-deep .mdc-text-field--outlined.mdc-text-field--focused .mdc-notched-outline__leading{
+    border: none !important;
+    outline: none !important;
+  }
+
+  :host ::ng-deep .mdc-text-field--outlined.mdc-text-field--focused .mdc-notched-outline__notch{
+    border: none !important;
+    outline: none !important;
+  }
+
+  :host ::ng-deep .mdc-text-field--outlined.mdc-text-field--focused .mdc-notched-outline__trailing{
+    border: none !important;
+    outline: none !important;
+  }
+
+  :host ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__leading{
+    border: none !important;
+    outline: none !important;
+  }
+
+  :host ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__notch{
+    border: none !important;
+    outline: none !important;
+  }
+
+  :host ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__trailing{
+    border: none !important;
+    outline: none !important;
+  }
+
+  :host ::ng-deep .mat-mdc-form-field .mat-mdc-form-field-bottom-align{
+    height:0px !important;
+  }
+
+  :host ::ng-deep .mat-mdc-form-field .mdc-text-field{
+    padding: 0px !important;
+  }
+
+
+ :host ::ng-deep .mat-mdc-form-field-flex{
+  background-color: #ffffff !important;
+   border: 1px #09efef solid;
+  color: black !important;
+
+ }
+
+ :host ::ng-deep .mat-mdc-form-field-flex .mat-mdc-form-field-infix input::placeholder{
+  color: black !important;
+   font-family: "Palatino Linotype", serif;
+   font-weight: normal;
+   letter-spacing: 2px;
+ }
