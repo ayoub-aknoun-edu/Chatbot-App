@@ -8,8 +8,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ChatService {
-  // private baseUrl = 'http://localhost:8000';
-  private baseUrl = 'https://test.elrhadiouini.com/api';
+  private baseUrl = 'http://localhost:8000';
+  // private baseUrl = 'https://test.elrhadiouini.com/api';
+
 
   constructor(private http: HttpClient) {}
 

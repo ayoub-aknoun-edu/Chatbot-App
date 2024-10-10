@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a chatbot application consisting of a backend and a frontend. The backend is implemented in Python, while the frontend is built using Angular. The chatbot is designed to interact with users, providing responses based on the integrated language models.
+This project is a chatbot application consisting of a backend and a frontend. The backend is implemented in Python, while the frontend is built using Angular. The chatbot is designed to interact with users, providing responses based on the integrated different language models including those from ollama and GROQ.
 
 ## Prerequisites
 
@@ -84,10 +84,16 @@ The frontend is an Angular application that provides the user interface for inte
 
 The project uses environment variables to manage configuration. Create a `.env` file in the [chatbot-backend](chatbot-backend) directorie with the necessary variables.
 
+## interface
+
+here is how the chatbot interface looks like:
+
+![chatbot interface](resources/chatbot.png)
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any questions or feedback, please contact the project maintainers.
+For any questions or feedback, contact me on the following email: [a.akanoun@edu.umi.ac.ma](mailto:a.akanoun@edu.umi.ac.ma)
